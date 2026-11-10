@@ -293,3 +293,5 @@ To deploy with an actual live MongoDB Atlas cluster:
 - [x] Interactive Recharts visual analytics (Bar, Pie, Area)
 - [x] Automated test suite with 17 passed test cases
 - [x] Comprehensive documentation and viva presentation guide
+
+K. Lova Pavan Kumar
