@@ -1,19 +1,28 @@
 {
-  "name": "campusflow",
+  "name": "campusflow-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "CampusFlow - An Intelligent Campus Coordination and Resource Management System",
+  "type": "module",
   "scripts": {
-    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"magenta,cyan\" \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
-    "start": "node backend/server.js",
-    "seed": "node backend/utils/seed.js",
-    "test": "node backend/testApi.js",
-    "backend": "cd backend && npm start",
-    "frontend": "cd frontend && npm run dev",
-    "build": "cd frontend && npm run build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "B.Tech CSE Software Engineering & System Design",
-  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.13.3"
+  },
   "devDependencies": {
-    "concurrently": "^9.2.5"
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
   }
 }
